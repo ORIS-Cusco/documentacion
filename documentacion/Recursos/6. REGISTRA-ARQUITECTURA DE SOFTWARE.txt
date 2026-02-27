@@ -1,0 +1,389 @@
+
+
+	
+
+		
+
+ARQUITECTURA DE SOFTWARE
+
+
+Proyecto:Sistema de Gestión AcadémicaSiglas:REGISTRACódigo:PROYECTO-008-2018-DIGEST-REGIA v2Versión:1.0
+
+
+
+
+
+
+
+DIRECCION DE GESTION DE INSTITUCIONES DE EDUCACIÓN TÉCNICO PRODUCTIVA Y SUPERIOR TECNOLÓGICA Y ARTISTICA - DIGEST
+
+
+
+
+
+
+APROBACIÓN DEL DOCUMENTO
+ACTIVIDADNOMBRE Y APELLIDO / CARGO o ROLFECHAFIRMAElaborado por:Roger Taipe  / Analista  Funcional21.02.2019Aprobado por:
+
+CONTROL DE CAMBIOS
+VERSIÓNFECHA DE APROBACIÓNDESCRIPCIÓN DEL CAMBIO
+
+
+INDICE
+I.	INTRODUCCIÓN	6
+  1.1.	PROPÓSITO	6
+  1.2.	ALCANCE	6
+  1.3.	DEFINICIONES Y ACRÓNIMOS	6
+  1.3.1.	DEFINICIONES	6
+  1.3.2.	ACRÓNIMOS	7
+  1.4.	REFERENCIAS	7
+  1.5.	VISIÓN GENERAL	7
+II.	REPRESENTACIÓN DE LA ARQUITECTURA	8
+  2.1.	DIAGRAMA DE ARQUITECTURA LÓGICA	8
+  2.2.	DESCRIPCIÓN DE LA ARQUITECTURA	8
+  2.2.1.	PRESENTACIÓN (CLIENTE SERVIDOR WEB).	8
+  2.2.2.	SERVICIOS (DISTRIBUIDOS/INTERNOS)	9
+  CONTRATO DE SERVICIOS	9
+  DEFINE LAS OPERACIONES QUE SOPORTA EL SERVICIO Y QUE PERMITEN COMUNICAR EL LADO CLIENTE AL SERVICIO.	9
+  HOST	9
+  VIENE A SER LA IMPLEMENTACIÓN DEL SERVICIO WEB.API QUE RECIBE LAS LLAMADAS DEL CLIENTE Y DERIVA AL SERVIDOR DE APLICACIONES.	9
+  SERVICIOS	9
+  VIENE A SER LA IMPLEMENTACIÓN DE LAS LLAMADAS DE LOS MÉTODOS EXPUESTOS EN LOS CONTRATOS DE OPERACIONES POR CADA CONTRATO DE SERVICIO.	9
+  2.2.3.	APLICACIÓN	9
+  INTERFACES	9
+  CLASES QUE EXPONEN MÉTODOS QUE PUEDEN SER UTILIZADOS PARA PROCESAR INFORMACIÓN EN LA BASE DE DATOS.	9
+  SERVICIOS DE APLICACIÓN	9
+  VIENE A SER LA IMPLEMENTACIÓN DE LOS MÉTODOS QUE SE EXPONEN EN LAS INTERFACES A NIVEL DE APLICACIÓN, ESPECIFICANDO LOS LLAMADOS A LOS PROCEDIMIENTOS A EJECUTARSE, PASO DE PARÁMETROS, PUDIENDO IMPLEMENTAR MÉTODOS DE VALIDACIÓN DE LOS DATOS DE ENTRADA Y/O SALIDA.	9
+  2.2.4.	DOMINIO	10
+  2.2.5.	INFRAESTRUCTURA	10
+  2.2.6.	TRANSVERSAL.	11
+  ENTIDADES DE SERVICIO: ENTIDADES QUE SE DECLARAN PARA SER UTILIZADOS EN CUALQUIER NIVEL DE LA APLICACIÓN QUE SEA REFERENCIADA.	11
+  RECURSOS: ESTA CAPA SE ENCARGA DE ALBERGAR ARCHIVOS DE RECURSOS (.RESX DE MENSAJES) DE PROPÓSITO GENERAL A SER EMPLEADOS EN LA CONSTRUCCIÓN DE LA SOLUCIÓN.	11
+  SEGURIDAD: ESTA CAPA SE ENCARGA DEL MANEJO DE LA SEGURIDAD MEDIANTE MECANISMOS DE AUTENTICACIÓN Y AUTORIZACIÓN USANDO UN SERVICIO DE SEGURIDAD EXTERNO DEL MÓDULO DE CONTROL	11
+  2.3.	METAS Y RESTRICCIONES	12
+  2.3.1.	METAS	12
+  2.3.2.	RESTRICCIONES	12
+III.	VISTA DE CASOS DE USO	12
+IV.	VISTA LÓGICA	17
+V.	VISTA DE DESARROLLO	18
+ESTA VISTA DESCRIBE LA ESTRUCTURA TOTAL DEL MODELO DE IMPLEMENTACIÓN, LA DESCOMPOSICIÓN DEL SOFTWARE EN CAPAS Y MÓDULOS	18
+5.1.	DEPENDENCIA DE CAPAS.	18
+EL SISTEMA REGISTRA SE ENCUENTRA DIVIDIDO EN CAPAS BASADO EN UNA ARQUITECTURA N-TIER SEPARANDO CADA CAPA POR UNA RESPONSABILIDAD ESPECÍFICA:	18
+5.2.	COMPONENTES	19
+	19
+VI.	MODELO DE DATOS	19
+  6.1.	MODELO LÓGICO	19
+  6.2.	MODELO FÍSICO	21
+VII.	ANEXOS	21
+    
+
+
+
+
+
+I. INTRODUCCIÓN
+
+El presente documento muestra el enfoque de arquitectura lógica del Sistema de Gestión Académica (REGISTRA) a desarrollar haciendo uso de diferentes vistas para poder ilustrar sus características más importantes.
+
+1.1. Propósito
+El objetivo es brindar una visión comprensible de la arquitectura general del Sistema de Gestión Académica REGISTRA. 
+
+1.2. Alcance
+Descripción del enfoque de arquitectura lógica del Sistema de Gestión Académica REGISTRA a desarrollar.
+
+1.3. Definiciones y acrónimos
+Se definen los siguientes términos para mejor interpretación del contenido de este documento:
+1.3.1. Definiciones 
+
+* ESPECIALISTA DRE: Especialista de la Dirección Regional de Educación.
+* ESPECIALISTA DEL IEST: Miembro responsable de gestión institucional en donde corresponda. 
+* DIRECTOR DEL IEST: Director General del Instituto de Educación Superior Tecnológica.
+* ESPECIALISTA MINEDU: Especialista del Ministerio de Educación.
+* ESTUDIANTE: Persona que ya ha iniciado sus estudios en un IEST, ESFA o CETPRO. También denominado estudiante regular.
+* INSTITUCIONES EDUCATIVAS: Agrupa al conjunto de instituciones de educación técnico – productiva, superior tecnológico y artística.
+* Actor del Sistema: Es alguien o algo externo al sistema pero interactúa con él. Representa un rol de usuario del sistema. Cada actor del sistema usa el sistema de diferentes maneras
+* Caso de Uso del Sistema: Describe las transacciones ofrecidas por un sistema. También se le identifica como las formas en que el usuario interactúa con el sistema. Presenta un conjunto de escenarios potenciales
+* Diagrama de Caso de Uso: Muestra las distintas transacciones (interacciones) que se esperan de una aplicación o sistema y como se relaciona con su entorno.
+* Paquetes: Agrupaciones de casos de uso y actores agrupados de acuerdo a la funcionalidad que proveen.
+
+1.3.2. Acrónimos
+
+* MINEDU: Ministerio de Educación.
+* SINAD: Sistema de Información de Apoyo a la Administración Documental y de Archivo.
+* REGIA: Sistema de Registro Académico
+* OTIC: Oficina de Tecnologías de Información y Comunicaciones.
+* DIGEST: Dirección ge Gestión de Instituciones de Educación Técnico-Productiva y Superior Tecnológica y Artística.
+* IEST: Instituto de Educación Superior Tecnológico.
+* CETPRO: Centro de Educación Técnico Productiva.
+* DRE: Dirección Regional de Educación.
+* OTIC: Oficina de Tecnologías de la Información y Comunicación.
+* IE : Internet Explorer
+* SOAP: Simple Object Access Protocol
+* DDD: Domain Driven Design
+* HTTP: HyperText Markup Language
+* CSS: Cascading Style Sheet
+* JS: 	JavaScript
+* JSON: JavaScript Object Notation
+* WCF: Windows Communication Foundation
+* ORM: Object-Relational Mapping
+* MVC: Design Pattern Model-View-Controller
+    
+1.4. Referencias
+
+* 1.REGISTRA-MODELAMIENTO DE CASOS DE USO
+
+1.5. Visión General
+En este documento se analizará la arquitectura desde el punto de vista de los usuarios y los desarrolladores. Para ello se presenta de manera clara los casos de uso que más representan la arquitectura del sistema, las funcionalidades y conexiones entre los diferentes niveles de la arquitectura, empleando un lenguaje sencillo y directo, así como gráficos y vistas de acuerdo a la metodología RUP.
+
+II. REPRESENTACIÓN DE LA ARQUITECTURA
+
+2.1. Diagrama de arquitectura lógica
+La arquitectura a utilizar será N-Capas orientado a dominio.
+
+
+
+
+* Diagrama que muestra de arquitectura lógica del Sistema -
+
+2.2. Descripción de la arquitectura
+   Esta sección describe las cada uno de los niveles y sus capas:
+
+2.2.1. Presentación (Cliente Servidor Web).
+
+El nivel presentación emplea el patrón Modelo – Vista – Controlador y adicionalmente cuenta con Mapas y Proxys.
+Capa Cliente que se utiliza para definir las Clases “View Model” que servirán de enlace entre los Controladores y las Vistas HTML de la aplicación.
+
+Vista UI: La aplicación presentara todas las vistas HTML los cuales serán gestionados por la capa web cliente.
+
+Controlador: Las aplicaciones presentan Controladores a nivel de AngularJS y controladores de lado servidor.
+
+Proxys Servicios: Los proxys o clases necesarias para la comunicación del nivel presentación (FrontEnd) con el nivel servicios distribuidos (BackEnd) son:
+* ProxysModule.cs. Define las operaciones para invocar a los Contratos de Servicios (Servicios Distribuidos) de los distintos módulos de la aplicación.
+* RegisterProxy.tt. Plantilla que actualiza las invocaciones de Servicios (ProxysModule.cs)
+
+Reportes: SSRS
+
+2.2.2. Servicios (Distribuidos/Internos)
+
+Contrato de servicios
+
+Define las operaciones que soporta el servicio y que permiten comunicar el lado cliente al servicio.
+
+Host
+
+Viene a ser la implementación del servicio WEB.API que recibe las llamadas del cliente y deriva al servidor de aplicaciones.
+
+Servicios
+
+Viene a ser la implementación de las llamadas de los métodos expuestos en los contratos de operaciones por cada contrato de servicio.
+
+2.2.3. Aplicación
+
+Interfaces
+
+Clases que exponen métodos que pueden ser utilizados para procesar información en la base de datos.
+
+Servicios de aplicación
+
+Viene a ser la implementación de los métodos que se exponen en las interfaces a nivel de aplicación, especificando los llamados a los procedimientos a ejecutarse, paso de parámetros, pudiendo implementar métodos de validación de los datos de entrada y/o salida.
+
+2.2.4. Dominio
+
+La capa de dominio corresponde al modelo de negocio que soporta los requerimientos funcionales del sistema. Las entidades de negocio que contiene datos y lógica de negocio son administradas y accedidas por los repositorios y servicios de dominio que en su conjunto proveen una interfaz de las operaciones que provee el negocio.
+
+Entidades: Clases de dominio que corresponden a las entidades de negocio.
+
+Enumerados: Objetos para inicializar clases que serán utilizadas a nivel de la aplicación.
+
+2.2.5. Infraestructura
+
+Datos
+Este nivel es el encargado de la gestión de la persistencia de datos mediante el contexto del modelo y/o procedimientos almacenados.
+La persistencia de datos representa la abstracción de los medios concretos de almacenamiento de información para simplificar su uso.  Provee los mecanismos necesarios para la recuperación y persistencia de los datos consumidos por la aplicación desde las diferentes fuentes definidas.
+* Interfaces modelo: Esta capa define las Interfaces y Operaciones de la Unidad de Trabajo cuando se hace uso de procedimientos almacenados tanto para lectura como para escritura de información.
+
+* Persistencia: Framework ORM utilizado para el acceso a la base de datos. Se realiza la implementación de las interfaces del modelo por cada unidad de trabajo. En este nivel se especifican los parámetros de entrada y salida que se asocian al llamado de un procedimiento almacenado.
+
+Servicios Internos
+Los servicios internos vienen a ser los servicios Windows implementados en el sistema, para su manejo se tiene:
+* Implementación del Servicio de Archivos. Viene a ser la definición del servicio Windows para su implementación. Este servicio sirve para el manejo de archivos.
+
+* Operaciones del servicio de archivos. Viene a ser la implementación de los procedimientos que se ejecutaran una vez que se den las condiciones del servicio inicializado. Como ejemplo de aplicación tenemos: El tratamiento de la carga masiva de información a partir de una plantilla de datos validada.
+
+Servicios Externos
+Los Servicios Externos vienen a ser las referencias hacía servicios proporcionados por otros sistemas, los cuales son:
+o Servicio RENIEC
+o Servicio de Correo electrónico
+o Servicio de Seguridad de Passport.
+
+2.2.6. Transversal.
+      El nivel transversal implementa las siguientes capas:
+Entidades de servicio: Entidades que se declaran para ser utilizados en cualquier nivel de la aplicación que sea referenciada.
+
+Recursos: Esta capa se encarga de albergar archivos de recursos (.resx de Mensajes) de propósito general a ser empleados en la construcción de la solución.
+
+Seguridad: Esta capa se encarga del manejo de la seguridad mediante mecanismos de Autenticación y Autorización usando el sistema de seguridad PASSPORT.
+
+Errores: Esta capa se encarga del manejo de errores del sistema.
+Auditoría: Esta capa se encarga del manejo de auditoria del sistema.
+* Auditoria de Accesos: Se gestiona mediante el servicio proxy de Seguridad del Proyecto.
+* Auditoria de Acciones en el modelo de BD: Esta clase es una extensión del contexto del modelo y permite leer la metadata de las entidades que participan en cada operación de Actualización y Eliminación permitiendo almacenar solamente los campos afectados durante la operación.
+		
+
+2.3. Metas y restricciones
+   Esta sección describe las metas y restricciones de arquitectura:
+
+2.3.1. Metas
+
+* El sistema debe poder ser accedido a través de una dirección Web pública. 
+* El sistema debe poder atender las necesidades de concurrencia de acceso y carga, con un esquema apoyado en granjas de servidores (si el escenario lo amerita).
+* La interfaz de usuario debe hacer uso de tecnologías de lado de cliente para el nivel de presentación (web)
+* La interfaz de usuario debe ser adaptativa y debe poderse acomodar a distintos dispositivos.
+* La arquitectura busca tener bajo acoplamiento entre sus componentes basándose en el principio de única responsabilidad por cada uno de estos.
+* El sistema debe permitir un fácil uso para cualquier tipo de usuario, reduciendo así el tiempo en las capacitaciones.
+* El sistema debe utilizar la infraestructura de servidores en Windows que es actualmente utilizada en la empresa y por lo tanto se deben utilizar tecnologías Microsoft para su implementación.
+
+2.3.2. Restricciones
+
+* El sistema deberá ser desarrollado utilizando .NET Framework 4.5.1 o superior. 
+* El sistema deberá soportar los navegadores IE 11+, y las últimas versiones de Mozilla Firefox 4.x y Google Chrome.
+* El sistema debe utilizar la infraestructura de servidores en Windows que es actualmente utilizada en la empresa y por lo tanto se deben utilizar tecnologías Microsoft para su implementación.
+* El sistema deberá presentar total conectividad con la Base de Datos, la cual deberá ser manejada por MS-SQL Server 2014.
+* El servidor Web debe correr Windows Server 2012 R2 como Sistema Operativo.
+
+
+
+
+
+
+III. VISTA DE CASOS DE USO
+
+Lista los casos de uso o escenarios del modelo de casos de uso que representen funcionalidades centrales del sistema final, que requieran una gran cobertura arquitectónica o aquellos que impliquen algún punto especialmente delicado en lo que a arquitectura se refiere.
+
+Documento de referencia:
+
+ESPECIFICACIÓN DE CASO DE USO ver.03
+* Paquete de Inicio y Administración (PAQ-01)
+
+
+
+
+
+
+
+
+
+
+* Paquete de Institución Educativa (PAQ-02)
+
+
+* Paquete de Metas de Atención (PAQ-03)
+
+
+* Paquete de Admisión (PAQ-04)
+
+
+
+* Paquete de Planificación (PAQ-05)
+
+
+
+
+
+* Paquete de Matrícula (PAQ-06)
+
+
+
+
+* Paquete de Evaluación (PAQ-07)
+
+
+
+    
+IV. VISTA LÓGICA
+    La vista lógica está enfocada en describir la estructura y funcionalidad del sistema.
+    (Indicada en el punto 2.)
+    
+    
+    
+V. VISTA DE DESARROLLO
+Esta vista describe la estructura total del modelo de implementación, la descomposición del software en capas y módulos
+
+5.1. Dependencia de capas.
+
+El sistema REGISTRA se encuentra dividido en capas basado en una arquitectura N-Tier separando cada capa por una responsabilidad específica:
+
+
+
+El diagrama muestra los paquetes de alto nivel en los que se divide el sistema y que coinciden con las capas que componen la aplicación.
+
+
+
+
+
+
+
+5.2. Componentes
+
+
+
+VI. VISTA DE PROCESO
+El Sistema de Registro Académico “REGISTRA” realiza un proceso en segundo a través de un servicio Windows el cual se ejecuta para la realización del proceso de carga masiva desde una plantilla de datos validados. El proceso que se realiza sigue el siguiente procedimiento:
+
+1. Inicialmente se carga un archivo de datos CargaMasiva.xlsx en el servidor de archivos (File Server) y en la tabla archivo.carga de la base de datos del sistema (db_regia_2). 
+2. Se registra el proceso en estado “PENDIENTE” en el Sistema de Configuración y Seguridad a través del método Proceso Sistema_Registrar Proceso. El acceso para el Sistema de Configuración y Seguridad (SCS) es a través del enlace:
+http://10.200.4.32:20150/Configuracion/ProcesosServicio.svc?wsdl
+
+
+Procesamiento del Servicio WINDOWS:
+
+
+
+VII. MODELO DE DATOS
+    
+    
+6.1. MODELO LÓGICO
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+6.2. MODELO FÍSICO
+    
+    
+    
+VIII. ANEXOS
+No aplica
+
+
+
+Proyecto: REGISTRA
+
+
+Página 21 de 21
+
+
+
+
+
+
