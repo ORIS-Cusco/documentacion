@@ -1,0 +1,216 @@
+
+
+
+
+
+
+
+
+		
+
+Arquitectura de Tecnología de Información
+v1.0
+
+
+
+
+
+Proyecto:Sistema de Gestión AcadémicaSiglas:REGISTRACódigo:PROYECTO-008-2018-DIGEST-REGIA v2Versión:1.0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DIRECCION DE GESTION DE INSTITUCIONES DE EDUCACIÓN TÉCNICO PRODUCTIVA Y SUPERIOR TECNOLÓGICA Y ARTISTICA 
+
+Identificación del documento
+
+RolNombreCargoFechaFirmaElaboración[Roger Taipe Murga]Analista Funcional[25.02.2019]
+RevisiónAprobación
+Historial de cambios
+
+VersiónÍtemAutorDescripciónFecha1.0                               [Roger Taipe][Versión Inicial][25.02.2019]
+
+
+
+
+
+Contenido
+2.1.	Diagrama de Arquitectura física.	6
+2.2.	Sistemas y servicios asociados	7
+1.	Dimensionamiento de Hardware y Software Base	7
+1.1.	Hardware	7
+1.2.	Software	11
+
+
+
+I. INTRODUCCIÓN
+El presente documento ayuda a describir las necesidades de recursos de hardware y software del Sistema de Registro Académico “Registra”.
+
+1.1. Propósito
+El objetivo es brindar información necesaria sobre los recursos que se requiere para el Sistema de Registro Académico.
+
+1.2. Alcance
+Descripción de recursos de hardware y software del proyecto Sistema de Registro Académico. 
+
+1.3. Definiciones y abreviaturas
+Se definen los siguientes términos para mejor interpretación del contenido de este documento.
+
+1.3.1. Definiciones
+- MINEDU: Ministerio de educación.
+- Sistema de Gestión Docente: Es el sistema para el registro de información de los procesos que intervienen los docentes contratados y nombrados de las instituciones de educación superior tecnológica.
+
+1.3.2. Abreviaturas
+    MINEDU: Ministerio de Educación.
+    DRE: Dirección Regional de Educación.
+    UGEL: Unidad de Gestión Educativa Local.
+    UE: Unidad Ejecutora.
+    HTTP: Hypertext Transfer Protocol - Protocolo de comunicaciones.
+    LAN: Red de área local.
+    WAN: Red de área amplia
+    VPN: Red Privada Virtual
+    IIS: Internet Information Services.
+    MS SQL Server: Motor de Base de datos relacional.
+    GRANJA: Conjunto de Servidores distribuidos.
+    DMZ: Zona desmilitarizada.
+WEB API: Es una extensión del framework.net para construir servicios basados en HTTP que pueden ser accedidos por diferentes aplicaciones en distintas plataformas tales como entornos web, Windows y móviles.
+Web Farm Framework: Microsoft Web Farm Framework es un producto gratuito, completamente soportado, de Microsoft que permite administrar una granja de servidores web, permite automatizar la instalación y configuración de componentes de la granja, y permite sincronizar automáticamente y desplegar aplicaciones ASP.NET.
+ONLine: Aplicaciones de negocio cuyo núcleo se encuentra expuesto en internet.
+
+1.4. Referencias
+Para la elaboración del presente documento se ha tomado como referencia estándares de OTIC, cuyos documentos son:
+* Guías para el desarrollo de aplicaciones distribuidas basadas en Microsoft .Net
+* Estándares para el uso de herramientas de desarrollo y plataformas de Aplicaciones WEB .Net (OTIC).
+* Microsoft Web Farm Framework: 
+    http://www.iis.net/downloads/microsoft/web-farm-framework
+
+
+
+II. ARQUITECTURA DE TI
+2.1. Diagrama de Arquitectura física.
+
+
+
+
+Descripción:
+- El sistema de encontrará instalado en el servidor web.
+- La capa de negocio del sistema se instalará en el servidor de servicio WEB Api.
+- La base de datos del sistema se encuentra en el servidor de base de datos SQL SERVER.
+2.2. Sistemas y servicios asociados
+
+
+1. Dimensionamiento de Hardware y Software Base
+1.1. Hardware
+
+Servidores
+
+CONTROLADOR (S)
+CaracterísticaDescripciónSistema OperativoMicrosoft Windows Server 2012 R2 Standard EditionTipoMicrosoft Corporation Virtual MachineProcesador MínimoIntel(R) 2.7 GHz o SuperiorArq. de Procesadorx64Núcleos (Cores)8Memoria Mínima8 GB RAMCapacidad DiscoDisk 0: 80 GB  para el Sistema OperativoSoftware NecesarioMicrosoft Web Farm Framework Microsoft .NET Framework 4.5.1, IIS 8.5
+Puerto de Comunicación: 80 (Http)Juicio Experto
+ ALMACENAMIENTO
+Característica  DescripciónAlmacenamiento RequeridoAlmacenamiento de configuración de servidores granja en el IIS (Web Farm Framework)
+NODOS WEB (SER-Web)
+Característica  DescripciónSistema OperativoMicrosoft Windows Server 2012 R2 Standard EditionTipoMicrosoft Corporation Virtual MachineProcesador MínimoIntel(R) CPU 2.7 GHz o SuperiorNúcleos (Cores)8Arq. de Procesadorx64Memoria Mínima24 GB RAMCapacidad DiscoDisk 0: 100 GB  para el Sistema OperativoSoftware NecesarioFramework 4.5.1, IIS 8.5
+Protocolos: Http, TCPJuicio Experto
+ALMACENAMIENTO
+Característica  DescripciónAlmacenamiento RequeridoAlmacena Binarios de las aplicaciones Web
+Almacena Archivos Temporales
+NODOS SERVICIOS (SER-Servicios)
+Característica  DescripciónSistema OperativoMicrosoft Windows Server 2012 R2 Standard EditionTipoMicrosoft Corporation Virtual MachineProcesador MínimoIntel(R) CPU 2.7 GHz o SuperiorNúcleos (Cores)8Arq. de Procesadorx64Memoria Mínima32 GBCapacidad DiscoDisk 0: 100 GB  para el Sistema OperativoSoftware Necesario.NET Framework 4.5.1, 
+WCF, IIS 8.5Juicio Experto
+ALMACENAMIENTO
+Característica  DescripciónAlmacenamiento RequeridoAlmacena Binarios de los Servicios Web
+SERVICIO WINDOWS (SER-ServiciosInternos)
+Característica  DescripciónSistema OperativoMicrosoft Windows Server 2012 R2 Standard EditionTipoMicrosoft Corporation Virtual MachineProcesador MínimoIntel(R) CPU 2.70 GHz o SuperiorNúcleos (Cores)8Arq. de Procesadorx64Memoria Mínima32 GBCapacidad DiscoDisk 0: 100 GB  para el Sistema Operativo.
+Disk 1: 80 GB DataSoftware NecesarioFramework 4.5.1Juicio Experto
+ALMACENAMIENTO
+Característica  DescripciónAlmacenamiento RequeridoProcesos Batch.
+100 GB para SO y Servicios Internos (DLL).
+   80 GB para MSMQ (Cola Mensajes)
+FILE SERVER (SER-Archivos)
+Característica  DescripciónSistema OperativoMicrosoft Windows Server 2008TipoMicrosoft Corporation Virtual MachineProcesador MínimoIntel(R) CPU 2.70 GHz o SuperiorNúcleos (Cores)8Memoria Mínima16GBCapacidad DiscoDisk 0: 80 GB  para el Sistema Operativo
+Disk 1: 2 TB Carpetas de ArchivosSoftware NecesarioJuicio ExpertoNota: Se respetará lo entregado por PRODUCCION (Directorio compartido: 10.1.1.84\Spe)
+
+ALMACENAMIENTO
+Característica  DescripciónAlmacenamiento RequeridoFile Server 4 TB Carpetas de Archivos
+SSIS, SSRS (SER-RS&IS)
+Característica  DescripciónSistema OperativoMicrosoft Windows Server 2012 R2 Standard EditionTipoMicrosoft Corporation Virtual MachineProcesador MínimoIntel(R) CPU 2.7 GHz o SuperiorNúcleos (Cores)8Arq. de Procesadorx64Memoria Mínima32GBCapacidad DiscoDisk 0: 100 GB  para el Sistema Operativo
+Disk 1: 80 GB 
+    DATA (Tempdb.mdf)  /   LOG  (Tempdb.ldf)
+Disk 2: 100 GB 
+    DATA (ReportServer.mdf, ReportServerTempDB.mdf, SSISDB.mdf)
+    LOG    (ReportServer.ldf, ReportServerTempDB.ldf, SSISDB.ldf)
+    BACKUPSoftware NecesarioFramework 4.5
+SQL Server 2014 Standard Edition 
+Reporting Services, Integration ServicesJuicio Experto
+ALMACENAMIENTO
+Característica  DescripciónAlmacenamiento RequeridoC: 100 GB para el Sistema Operativo y SQL Server 2014 con los servicios de SSRS y SSIS
+E: 80 GB: Base de datos Tempdb.
+F: 100 GB: Base de datos de Reporting Services (SSRS) e Integration Services (SSIS) y Backup
+CACHE (SER-Cache)
+Característica  DescripciónSistema OperativoMicrosoft Windows Server 2012 R2 Standard EditionTipoMicrosoft Corporation Virtual Machine Procesador MínimoIntel(R) CPU 2.7 GHz  o SuperiorNúcleos (Cores)4Arq. de Procesadorx64Memoria Mínima8 GBCapacidad DiscoDisk 0: 80 GB  para el Sistema OperativoSoftware NecesarioFramework 4.5.1 o SuperiorJuicio Experto
+ALMACENAMIENTO
+Característica  DescripciónAlmacenamiento RequeridoCaché compartido para aplicaciones, Sesiones.
+4 Cache Clusters (2048 MB RAMP x 4)
+SERVIDOR DE BASE DE DATOS (SER-BD)
+Característica  DescripciónSistema OperativoMicrosoft Windows Server 2012 R2 Standard EditionTipoMicrosoft Corporation Virtual MachineProcesador MínimoIntel(R) CPU 2.7 GHz o SuperiorNúcleos (Cores)16 o superior.Arq. de Procesadorx64Memoria Mínima48 GB  (64 GB Recomendado)Capacidad DiscoDisk 0: 100 GB (Sistema Operativo y Software SQL Server)
+Disk 1: 150 GB (TEMPDB)
+Disk 2: 500 GB (Data1 SQL) (Almacena los archivos MDF)
+Disk 3: 400 GB (Data2 SQL) (Almacena los archivos NDF)
+Disk 4: 400 GB (Log SQL)
+Disk 5: 400 GB (Backup SQL)Software NecesarioSQL Server 2014 Enterprise EditionJuicio ExpertoDebe considerarse “Alta disponibilidad” para este servidor.
+
+Nota 1: Para la elaboración del cuadro de realizo una verificación en el ambiente de desarrollo.
+
+
+Alternativa 1
+Arquitectura de almacenamiento para servidores de DB para arreglo de 8 a más discos Físicos.
+Se solicita 5 discos al inicio y se van agregando disco de acuerdo a las bases de datos requeridas.
+Llegando de 2 TB en espacio.
+
+Datos a GuardarUnidad AsignadaCapacidadAlbergará al sistema operativo y la herramientas del motor de base de datos SQL server C:100 GBAlbergará la Base de Datos de TEMPDBE:100 GBAlbergará los archivos MDF de las bases de datos.F:500 GBAlbergará los archivos NDF de las bases de datosG:400 GBAlbergará los archivos LOG de las bases de datos.H400 GBAlbergará los archivos Backup de las bases datos, a modo temporal.I500 GB
+Nota 1: se puede agregar discos, cuando el crecimiento de bases de datos lo requiera o el crecimiento de una base de datos lo requiera, hasta llegar a 3 TB
+
+Nota 2: Revisar el Anexo 1: Detalle de las Bases de datos a desplegar en el servidor.
+
+
+1.2. Software 
+BASE DE DATOS
+Característica  DescripciónMotor de Base de datosSQL Server 2014 Enterprise Edition
+SQL Server 2014 Standard EditionCantidad de Conexiones DiariasUsuarios  concurrentes
+GESTOR DE IMÁGENES
+Característica  DescripciónNombre del productoNo aplicaCantidad de usuariosNo aplicaUsuarios  ConcurrentesNo aplica
+APLICACIONES
+Característica  DescripciónNombre del productoIIS 8.5Cantidad de usuariosUsuarios  concurrentes
+PROCESOS DE NEGOCIO (BPM)
+Característica  DescripciónNombre del productoNo AplicaCantidad de usuariosNo AplicaUsuarios  concurrentesNo Aplica
+PROXY DE SEGURIDAD
+Característica  DescripciónNombre del productoSe tomará la Infraestructura de Seguridad del Sistema PASSPORT.Cantidad de usuarios
+CORREO 
+Característica  DescripciónServidor de correoSMTP MINEDUCuenta de correoCuenta Institucional (mailmed@minedu.gob.pe)
+LICENCIAMIENTO
+Característica  DescripciónWindows Server2012 R2 Standard EditionLicencia de Sistema OperativoSQL Server 2014 Standard y EnterpriseLicencia de Base de Datos
+
+
+
+Proyecto: REGISTRA
+
+Arquitectura de Tecnología de Información
+Formato: Página No 11 / 11
+

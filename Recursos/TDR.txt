@@ -1,0 +1,435 @@
+
+
+
+
+
+
+TERMINOS  DE REFERENCIA
+
+AREA USUARIA
+
+
+
+
+
+ENOMINACIÓN DE LA
+CONTRATACIÓN
+
+PROYECTO: MEJORAMIENTO DE LOS SERVICIOS OPERATIVOS O MISIONALES INSTITUCIONALES EN LA GERENCIA REGIONAL DE INCLUSIÓN SOCIAL,
+MUJER y POBLACIONES VULNERABLES DEL GOBIERNO REGIONAL  cusca (EN  13 PROVINCIAS-116 DISTRITOS), DISTRITO DE WANCHAQ  DE LA PROVINCIA DE cusca DEL DEPARTAMENTO  DE cusca
+
+SERVICIO  DE IMPLEMENTACIÓN   DE LA PLATAFORMA   INFORMÁTICA  DEL OBSERVATORIO REGIONAL COMPONENTE  1  - 1.3.1 ANÁLISIS, DISEÑO E IMPLEMENTACIÓN DE PLATAFORMA  INFORMÁTICA - GRISMPV
+
+
+
+FINALIDAD PÚBLICA
+
+La Política  Nacional de Gobierno Digital,  mediante  Decreto  Legislativo  Nº 1412,  que aprueba la ley de Gobierno Digital, se establece el marco de gobernanza del gobierno digital para la adecuada gestión de la identidad digital, servicios digitales, arquitectura digital, interoperabilidad, seguridad digital y datos, así como el régimen jurídico  aplicable al uso transversal de tecnologías digitales en la digitalización de procesos y prestaciones de servicios digitales por parte de las entidades de la administración Pública en los tres niveles de gobierno.
+Con el fin de mejorar el procesamiento de información de los 116 gobiernos   locales  en función de las 6
+unidades funcionales los cuales se mencionan a continuación:
+
+•  Unidad funcional de Niño, Niña y Adolescentes
+•  Unidad funcional de Juventudes
+•  Unidad funcional de Adulto Mayor
+•  Oficina Regional de Personas con Discapacidad
+•  Oficina Regional de Atención a la Mujer.
+•  Unidad funcional de Pueblos Originarios, Participación Ciudadana y Rondas Campesinas.
+
+Dichas unidades funcionales y oficinas regionales  se encuentran  establecidas en: Almacén EX PRONAA,
+dirección: AV. REPÚBLICA DEL PERÚ - parque industrial mz J lote N°01, Wanchaq, Cusca.
+La necesidad de tener  un OBSERVATORIO REGIONAL en la región del Cusca nos proporcionará una línea de base con indicadores basados en estas 06 unidades funcionales los cuales facilitaran las intervenciones que tiene el proyecto  MISIONAL y la creación de múltiples proyectos sociales que permita cerrar brechas en la región del Cusca,  el cual requieren tener información de primera mano y en los tiempos adecuados  para tomar las acciones necesarias  en cada intervención.
+Es de vital importancia poder tener la información  que es de manejo cotidiano de los gobiernos locales los cuales monitorean y procesan la información de manera local, finalmente esta información es trascendental para la toma de decisiones y gestión de proyectos para cerrar brechas en la región del Cusca.
+
+
+
+
+
+
+
+
+1.                 OBJETIVO  DE LA CONTRATACIÓN
+
+Contratar  los servicios  de una empresa  especializada  en el desarrollo e implementación  de sistemas informáticos.  con el fin de ejecutar el  servicio  de desarrollo,  implementación,  despliegue,  pruebas  y documentación del aplicativo¡ web denominado  "Observatorio  Regional de Inclusión Social de Cusca' en base al análisis y diseño del prototipo del Observatorio Regional de Inclusión Social de Cusca que dará inicio a la puesta en marcha el Observatorio  Regional con los indicadores proporcionados por los 116 gobiernos locales para la toma decisiones y acciones para el proyecto MISIONAL y la Gerencia Regional de Inclusión Social, Mujer y Poblaciones  Vulnerables. Este proceso es de vital importancia para la implantación de la plataforma web.
+
+ALCANCES Y DESCRIPCIÓN  DEL SERVICIO
+
+
+ITEM                           DESCRIPCIÓN
+
+SERVICIO  DE IMPLEMENTACIÓN  DE LA PLATAFORMA INFORMÁTICA· OBSERVATORIO REGIONAL
+
+UNIDAD DE
+MEDIDA
+
+
+SERVICIO
+
+
+CANTIDAD
+
+
+01
+
+
+
+Implementación del aplicativo web denominado "Observatorio Regional de Inclusión Social de Cusca':
+
+El observatorio  regional es el resultado  de trabajo conjunto de los especialistas que conocen las 6 unidades funcionales  y un equipo  de analistas ingenieros  informáticos,  los cuales obtendrán  como resultados  la documentación, fichas técnicas, fichas familiares de los indicadores necesarios por cada  unidad funcional, que terminara  en un plataforma web  que mostrará el proceso de recolección de la información de los indicadores, finalmente  se implementará  un observatorio  regional  que mostrará un tablero de indicadores a nivel de gobierno local en tres niveles (Departamental, Provincial y Distrital). Según el análisis en algunos indicadores se podrá  tener hasta el análisis  nominal.  En  tal sentido  se pueda  tener intervenciones  más precisas y especificas.
+
+El Software  permitirá centralizar  la información relacionada con estas poblaciones vulnerables,  facilitando la colaboración entre las diferentes  unidades funcionales y agencias gubernamentales. Además, al contar con un tablero de indicadores, se podrá visualizar los datos de manera gráfica y en tiempo real, lo que ayudará a tomar decisiones informadas y asignar recursos de manera eficiente. Vista de indicadores propuestas a validar para la implementación de la plataforma denominada Observatorio Regional.
+
+El servicio en cuestión  se enfocará en llevar a cabo un proceso  integral de la implementación del observatorio regional basado en el prototipo desarrollado por el área usuaria
+
+El  servicio de implementación  de la PLATAFORMA  WEB deberá  llevar a cabo el desarrollo,  pruebas y despliegue del Sistema, asegurando su correcto  funcionamiento, para esto se deben realizar las siguientes actividades:
+
+
+
+
+
+
+
+
+•   Habilitación y configuración  de la infraestructura tecnológica que soportará la etapa de construcción y pruebas de los distintos módulos del Sistema, cabe indicar que la infraestructura tecnológica será proporcionada por la Gerencia Regional de Inclusión Social, Mujer y Poblaciones Vulnerables.
+•   Implementación  (construcción,   pruebas  de calidad  de software  y despliegue)  del Observatorio
+Regional de Inclusión Social Cusca para el proyecto MISIONAL y la Gerencia Regional de lnclusón
+Social, Mujer y Poblaciones Vulnerables., incluye las configuraciones necesarias para la puesta en producción del sistema.
+•  Capacitación técnica y funcional.
+
+ESPECIFICACIONES,  REQUERIMIENTOS DE LOS MÓDULOS  A IMPLEMENTAR
+
+El servicio debe contener  la elaboración  de los siguientes módulos y su puesta en producción, asi como su capacitación del software con sus respectivos manuales.
+
+PLATAFORMA WEB
+
+1.      Login
+2.    Creación de usuarios por roles (Administrador, Gobierno Local, Unidad Funcional)
+3.    Módulo del tablero "Observatorio  Regional"
+4.    Unidades Funcionales
+• Modulo - Oficina Regional de la Mujer
+• Modulo - Oficina Regional de Atención con Personas con Discapacidad
+• Modulo - Unidad funcional del Niño, Niña y Adolescente
+• Modulo - Unidad funcional de Juventudes
+• Modulo - Unidad funcional de Adultos Mayores
+• Modulo - Unidad funcional de Primera Infancia,
+• Modulo - Unidad funcional de Pueblos Originarios, Comunidades Campesinas, Nativas y Rondas
+Campesinas
+5.    Módulo de Reportes por unidades funcionales
+6.    Módulo RUV (Registro  único de víctimas)
+7.    Módulo de Mantenimientos
+8.    Módulos Complementarios
+• Submódulo Unidad Local de Empadronamiento - ULE
+• Submódulo Programa Vasc de Leche - PVL
+• Submódulo Programa de Complementación Alimentaria - PCA
+9.    Manuales instructivos  del uso del Observatorio  Regional
+• Manual para el Administrador
+• Manual para Unidades Funcionales
+• Manual para los Gobiernos Locales
+• Manual de Configuración del Front-End, Back-End y Despliegue.
+
+
+
+
+
+
+
+
+
+
+
+1
+
+
+
+
+
+
+
+ACTIVIDADES
+
+Desarrollo de un plan detallado para la implementación y despliegue del Observatorio  Regional en base al análisis y diseño del prototipo en los tres ambientes (Desarrollo, Pruebas y Producción).
+ANÁLISIS  y DISEÑO DEL OBSERVATORIO  REGIONAL DE INCLUSIÓN SOCIAL DE cusca
+
+En base al análisis y diseño del prototipo realizar el desarrollo, implementación y despliegue del observatorio
+regional.
+https://drive .google.com/file/d/1 Q1Xsm YBRXVGAnMDfGRSjdZiL    g-6PUW-f/view-?usp-=sharing
+•  Oficina Regional de la Mujer
+•  Oficina Regional de Atención de personas con discapacidad
+•  Unidad funcional del niño, niña y adolescente
+•  Unidad funcional de juventudes
+•   Unidad funcional de adultos mayores
+•  Unidad funcional de pueblos originarios,
+•  Unidad funcional de Pueblos Originarios, Comunidades campesinas, nativas y rondas campesinas.
+
+REALIZAR  LA IMPLEMENTACIÓN  DEL  OBSERVATORIO   REGIONAL  DE INCLUSIÓN  SOCIAL  DE
+cusca
+
+Según el análisis y diseño del prototipado y la priorización, clasificación de los indicadores validados por las
+unidades funcionales se tiene que implementar el aplicativo web,  implementar el ingreso de los usuarios, la
+forma de ingreso de los indicadores  y finalmente  la forma  como se mostrarán  los indicadores  mediante  un
+tablero de mando.
+
+MÓDULOS DEL APLICATIVO WEB:
+
+1.       Login
+2.    Gestión de accesos de usuarios y mantenimiento de datos de personas.
+3.   Gestión de Usuarios y niveles de accesos mediante perfiles.
+• Por Gobierno Local.
+• Por Unidad Funcional .
+• Por Gobierno Regional.
+• Por Administrador.
+4.    Gestión de indicadores por cada unidad funcional.
+• Módulo - Oficina  Regional de la Mujer.
+• Módulo - Oficina Regional de atención a personas con discapacidad.
+• Módulo - Unidad funcional del niño, niña y adolescente.
+• Módulo - Unidad funcional  de juventudes.
+• Módulo- Unidad funcional de adultos mayores.
+• Módulo - Unidad funcional de primera infancia ,
+• Módulo - Unidad funcional  de Pueblos  Originarios, Comunidades campesinas,  nativas  y rondas
+campesinas.
+
+
+
+
+
+
+
+
+5.    Mostrar  los indicadores según departamentos,  provincias, distritos según las unidades  funcionales.
+• Oficina Regional de la Mujer
+• Oficina Regional de atención con personas con discapacidad
+• Unidad funcional del niño, niña y adolescente
+• Unidad funcional de juventudes
+• Unidad funcional de adultos mayores
+• Unidad funcional de primera infancia,
+• Unidad funcional de Pueblos Originarios, Comunidades campesinas, nativas y rondas campesinas.
+6.    Gestión  de indicadores por cada unidad funcional por gobiernos locales.
+• Módulo de Mantenimiento - Oficina Regional de la Mujer
+• Módulo de Mantenimiento - Oficina Regional de atención con personas con discapacidad
+• Módulo de Mantenimiento - Unidad funcional del niño, niña y adolescente
+• Módulo de Mantenimiento - Unidad funcKJnal de juventudes
+• Módulo de Mantenimiento - Unidad funcional de adultos mayores
+• Módulo de Mantenimiento - Unidad funcional de pueblos originarios, comunidades campesinas,
+nativas y rondas campesinas.
+• Módulo de Mantenimiento .  Unidad funcional de primera infancia,
+7.    Generación de reportes según las unidades funcionales
+• Oficina Regional de la Mujer
+• Oficina Regional de atención con personas con discapacidad
+• Unidad funcional  del niño, niña y adolescente
+• Unidad funcional de juventudes
+• Unidad funcional de adultos mayores
+• Unidad funcional de primera infancia
+• Unidad funcional de pueblos originarios, comunidades campesinas,  nativas y rondas campesinas.
+8.    Generar Dashboard de Indicadores
+9.    Visualización de gráficos y en tiempo real de los indicadores.
+10.  Creación   de  la estructura  de la  Base de Datos,  procedimientos   almacenados,  triggers y otras
+estructuras de datos.
+
+Nota:  También  considerar  los indicadores de los servicios sociales  que  brindan los gobiernos  locales
+provinciales y distritales, referidas a:
+
+• Defensoría Municipal del Niño, Adolescente - DEMUNA
+• Oficina Municipal de persona con Discapacidad - OMAPED.
+• Centro integral del Adulto Mayor- CIAM
+• Unidad Local de Empadronamiento - ULE
+• Programa de Vaso de Leche - PVL
+• Programa de Complementaria Alimentaria -PCA
+
+
+
+
+
+
+
+
+REALIZAR  PRUEBAS Y DESPLIEGUE DEL OBSERVATORIO   REGIONAL  DE INCLUSIÓN SOCIAL  DE
+cusca
+1.    Pruebas  Técnicas
+a. Pruebas de Funcionalidad
+•  Validar que todas las herramientas del observatorio  (paneles de control, visualizaciones, informes) funcionen según lo diseñado.
+•  Revisar la integración con bases de dalos existentes (nacionales, regionales) .
+'                            b. Pruebas de Seguridad
+-                        •  Realizar  pruebas  de penetración para identificar vulnerabilidades .
+;                          •  Garantizar que los datos sensibles (personales y esladislicos) están protegidos bajo la Ley
+       de Protección de Dalos Personales. c. Pruebas  de Usabilidad
+•
+Involucrar usuarios finales (funcionarios, organizaciones sociales, académicos) para evaluar
+1                                                                       la facilidad de uso y la accesibilidad.
+2.    Despliegue Final
+•  Abrir el observatorio al público general o al grupo objetivo.
+
+4.                PROCEDIMIENTO
+
+No corresponde
+
+5.                 PLAN DE TRABAJO
+
+Plazo máximo del entregable, Hasta 10 dias calendarios, contabilizados desde el dia siguiente hábil de la firma del contrato.
+
+6.                 RECURSOS A SER PROVISTOS POR EL PROVEEDOR
+
+No corresponde.
+
+
+RECURSOS Y FACILIDADES A SER PROVISTOS POR LA ENTIDAD
+
+•  Servidor donde se tendrá los ambientes de desarrollo, pruebas y producción .
+•  Un dominio con SSL
+•  El prototipo del observatorio  regional
+
+l.             REGLAMENTOS TÉCNICOS, NORMAS METROLÓGICAS Y/O SANITARIAS
+•  Norma Técnica Peruana "NTP-ISO/IEC 12207:2016-lngenieria de Software y Sistemas·
+' ,.  .           •  Procesos del ciclo de vida del Software 3' Edición La Norma es de uso obligatorio en la administración
+'                        pública conforme lo dispuesto en la R.M. N° 041-2017-PCM2.
+•  Metodología ágiles u otras enfocadas en la experiencia de usuario la mención al uso de metodologías
+?'                         ágiles ha sido establecida en el articulo  12 del Decreto Supremo N° 051.2018 PCM
+•  Directiva Nº 03-2023-GR-CUSCO/GGR
+..'
+I'
+
+
+
+
+
+
+
+De la experiencia:   En el rubro, acreditado mediante copia simple de contratos  y su respectiva conformidad y/o constancias y/o certificados y/o facturas y/o ordenes de servicios y/o recibo por honorarios  y/o cualquier otra documentación que de manera fehaciente demuestre la experiencia del personal propuesto
+De  los Programas de Especialización  y cursos:    Acreditar mediante copia  simple  de constancias,  y/o
+certificados u otros documentos según corresponda.
+
+LUGAR Y PLAZO  DE EJECUCIÓN LUGAR:
+Sede central del Gobierno Regional de Cusca, sito en la Av Tomasa Tito Condemayta S/N - Wanchaq.
+PLAZO:
+El plazo de ejecución del servicio será de hasta los 100 dias calendarios, computados  a partir del dia siguiente de notificada la Orden de Servicio.
+
+ENTREGABLES
+
+1.     PRIMER  ENTREGABLE: a los 25 dias.
+• Plan de trabajo
+• Metodologia
+• Creación de la Arquitectura
+• Creación de la Base de Datos.
+• Login
+• Creación de usuarios por roles (Administrador,  Gobierno Local, Unidad Funcional)
+• Código fuente.
+Nota:
+Cada uno de los entregables será validado por el área usuaria.
+Desarrollo y Pruebas del Sistema correspondientes al primer entregable. En base al esquema del Anexo 01
+
+2.    SEGUNDO ENTREGABLE:  a los 50 dias.
+•   Unidades Funcionales
+o    Módulo - Oficina Regional de la Mujer
+o    Módulo• Oficina Regional de atención con personas con discapacidad
+o    Módulo - Unidad funcional del niño, niña y adolescente
+o    Módulo - Unidad funcional de juventudes
+o    Módulo - Unidad funcional de adultos mayores
+o    Módulo  - Unidad  funcional  de  pueblos  originarios,  comunidades  campesinas,
+nativas y rondas campesinas
+•  Módulo de Mantenimientos
+•  Módulo de Reportes por cada unidad funcional.
+•  Código fuente
+Nota:
+El segundo entregable  es el 50% restante del software, Cada uno de los entregables  será validado
+por el área  usuaria.
+
+
+
+
+
+
+
+Desarrollo y Pruebas del Sistema
+En base al esquema del Anexo 01
+
+3.    TERCER ENTREGABLE:  a los 75 días.
+• Módulo de Mantenimientos
+• Módulo de Reportes por cada unidad funcional.
+• Código fuente.
+Nota:
+El tercer entregable son la documentación técnica y los manuales  para los 116 gobiernos locales y
+06 unidades funcionales,  Cada uno de los entregables será validado por el área usuaria. Desarrollo y Pruebas del Sistema
+En base al esquema del Anexo 01
+
+4.    CUARTO  ENTREGABLE:  a los 100 días.
+•     Desarrollo y Pruebas del Sistema
+•     Despliegue, Implementación y Capacitación al área usuaria
+•     Módulos Complementarios
+o    Submódulo Defensoría Municipal del Niño, Adolescente - DEMUNA
+o    Submódulo Oficina Municipal de persona con Discapacidad - OMAPED. o    Submódulo Centro  integral del Adulto Mayor- CIAM
+o    Submódulo Unidad Local de Empadronamiento - ULE
+o    Submódulo Programa Vaso de Leche - PVL
+o    Submódulo Programa de Complementación Alimentaria - PCA
+•     Manuales instructivos  del uso del Observatorio Regional
+•     Manual para el Administrador
+•     Manual para Unidades Funcionales
+•     Manual para los Gobiernos Locales
+•     Manual de Configuración del Front-End, Back-End y Despliegue.
+•     Código fuente.
+
+NOTA: El proveedor deberá presentar por mesa de partes del Gobierno Regional del Cusca, una carta dirigida a la GERENCIA REGIONAL DE INCLUSIÓN SOCIAL, MUJER y POBLACIONES VULNERABLES, en la que solicitará la  conformidad   y pago, adjunlando   la  documentación   solicitada  y comprobante de  pago correspondiente a cada entregable.
+
+CONFIDENCIALIDAD
+
+El contratado  debe garantizar la absoluta confidencialidad de toda información que maneje y la información suministrada por la dependencia requirente, en ninguna circunstancia la información deberá ser utilizada por el contratado para los fines distintos al desarrollo del contrato, mientras dure el contrato.
+
+CONFORMIDAD
+
+
+
+
+
+
+
+
+ANEXO Nº1 - REQUERIMIENTOS NO FUNCIONALES
+
+?rquitectura                                                      •    Basada en servicios y/o microservicios aplicando Contenedores
+Docker y Kubernetes
+..
+.
+·2· 
+
+
+•   Patrón de aplicación de página única (SPA - Simple Page
+-                                             Application)
+•    Patrones de servicios
+•   Patrón de microservicios de adaptador
+?· ?         nes de desarrollo recomendados        •    Patrón strategy
+?::                                                                                                 •   Patrón Inyección de dependencias
+•   Pairan Data Access Object (DAO)
+•    Patrón Data Transfer O
+•   object (OTO)
+•    Patrón salid
+
+r                          •   PostgreSQL
+estor de Bases de Datos                          •    MariaDB
+•   NoSQL - MongoDB
+•    JPA
+lotor de persistencias
+
+•   Hibernate
+•   Moor
+•    Back-end
+o   Java
+Lenguajes de programación                      •    Front-end
+o   Javascript
+?
+?      Vi
+
+o   TypeScript
+.O'   e_.:                                                •    Spring cloud
+•    Spring boot 3.4 versión mínima
+?meworks de desarrollo                          •   Angular 17 versión mínima
+•    PrimeNg
+•    Boctstrap 5
+•    Material
+Gestión de Versiones y Trabajo                          Gitlab (Recomendado)
+colaborativo
+"
+-                                                                   •   Mysql Workbench
+.::i                                                                                                                   •   PGAdmin
+IDEs (lntegrated  Oevelopment Environment)    •   MongoDB Compass
+•   STS Spnng
+•   Visual Studio Code
+•    lntell1J idea   (Community)
+
+UX/UI                                                                  El diseño de la interfaz de usuario debe ser responsive(multi-plataforma)
